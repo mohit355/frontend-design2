@@ -1,0 +1,119 @@
+body {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 6.625rem;
+  /* color: #66BFBF; */
+  color: white;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  /* color: #66BFBF; */
+  color: white;
+  /* font-weight:800; */
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+div {
+  padding-top: 80px;
+}
+a {
+  color: #11999E;
+  text-decoration: none;
+}
+
+/* NAV BAR */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(169,169,169);
+  opacity: 0.8;
+  position: fixed;
+top: 0;
+width: 100%;
+z-index: 2;
+}
+
+li {
+  float: right;
+  opacity: 1;
+}
+
+
+li a {
+  display: block;
+  color: rgb(255,255,255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+/* TOP CONATINER */
+
+.top-container {
+
+
+background-color: #E4F9F5;
+position: relative;
+ background-image: url("https://st3.depositphotos.com/9718044/12671/v/600/depositphotos_126711724-stock-video-abstract-geometry-plexus-background-with.jpg");
+ background-repeat: no-repeat;
+background-size:cover;
+height: 720px;
+
+}
+
+.subtitle {
+  font-weight: bolder;
+}
+
+@keyframes bottom-cloud {
+  30%   {left:300px; bottom: 300px;}
+  60%  { left:0px; bottom:300px;}
+  100%  {left:300px; bottom: 300px;}
+
+}
+
+.bottom-cloud{
+  position: absolute;
+  bottom: 300px;
+  left: 300px;
+  animation-name: bottom-cloud;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+
+@keyframes top-cloud {
+  30%   {left:400px; top: 20px;}
+  60%  { left:700px; top:20px;}
+  100%  {left:400px; top: 20px;}
+
+}
+
+.top-cloud {
+  position: relative;
+  left:400px;
+  top: 20px;
+  animation-name: top-cloud;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
